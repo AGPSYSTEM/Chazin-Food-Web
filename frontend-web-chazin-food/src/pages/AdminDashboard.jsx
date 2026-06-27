@@ -144,8 +144,11 @@ function AdminDashboard({ onLogout }) {
             </div>
             <button className={`nav-item ${activeMenu === 'compras' ? 'active' : ''}`}>
               <svg className="nav-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" stroke="currentColor" strokeWidth="2"/>
-                <path d="M3 6h18" stroke="currentColor" strokeWidth="2"/>
+                <path d="M6 2L3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6L18 2H6Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M3 6H21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M16 10H16.01" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M12 14H12.01" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M8 18H8.01" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
               Compras
               <svg className="nav-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none">
@@ -154,7 +157,8 @@ function AdminDashboard({ onLogout }) {
             </button>
             <button className={`nav-item ${activeMenu === 'produccion' ? 'active' : ''}`}>
               <svg className="nav-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2z" stroke="currentColor" strokeWidth="2"/>
+                <path d="M12 4C10 4 8 6 8 9V19H16V9C16 6 14 4 12 4Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M12 2L8 7H16L12 2Z" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
               Producción
               <svg className="nav-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none">
@@ -163,8 +167,9 @@ function AdminDashboard({ onLogout }) {
             </button>
             <button className={`nav-item ${activeMenu === 'ventas' ? 'active' : ''}`}>
               <svg className="nav-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M23 6l-9.5 9.5-5-5L1 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                <circle cx="18" cy="5" r="3" stroke="currentColor" strokeWidth="2"/>
+                <path d="M16 8H21M21 8V13M21 8L12 17L3 8" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M8 19H3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M16 19H21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
               Ventas
               <svg className="nav-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none">
@@ -360,7 +365,7 @@ function AdminDashboard({ onLogout }) {
                     <button className="action-btn deactivate">
                       <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                         <circle cx="12" cy="12" r="9" stroke="#F59E0B" strokeWidth="2"/>
-                        <path d="M9 12h6" stroke="#F59E0B" strokeWidth="2" strokeLinecap="round"/>
+                        <path d="M8 12H12M12 12H16M12 12V8M12 12V16" stroke="#F59E0B" strokeWidth="2" strokeLinecap="round"/>
                       </svg>
                       Desactivar
                     </button>
@@ -379,30 +384,30 @@ function AdminDashboard({ onLogout }) {
         <nav className="bottom-nav">
           <button className="bottom-nav-item">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-              <path d="M10 20V14H14V20H19V12H22L12 3L2 12H5V20H10Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M3 10L12 3L21 10V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V10Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M9 21V12H15V21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
             Inicio
           </button>
           <button className="bottom-nav-item">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-              <path d="M6 6H19V18H6V6Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              <path d="M9 10H15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              <path d="M9 14H15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" strokeWidth="2"/>
+              <path d="M3 9H21" stroke="currentColor" strokeWidth="2"/>
+              <path d="M12 5V19" stroke="currentColor" strokeWidth="2"/>
             </svg>
             Compras
           </button>
           <button className="bottom-nav-item">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-              <path d="M12 4C10 4 8 6 8 9V19H16V9C16 6 14 4 12 4Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              <path d="M12 2L8 7H16L12 2Z" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M12 5C10 5 8 6.5 8 8.5V18H16V8.5C16 6.5 14 5 12 5Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
             Producción
           </button>
           <button className="bottom-nav-item">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-              <path d="M12 8V4M12 12V8M12 16V12M12 20V16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              <circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" strokeWidth="2"/>
-              <circle cx="12" cy="16" r="4" fill="none" stroke="currentColor" strokeWidth="2"/>
+              <path d="M3 17H21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M8 12L12 8L16 10L21 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M19 3H21V5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
             Ventas
           </button>
